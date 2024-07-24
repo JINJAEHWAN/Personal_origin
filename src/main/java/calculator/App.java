@@ -46,8 +46,19 @@ public class App {
             System.out.println("결과: " + result);
             /* 연산의 결과를 배열에 저장합니다. */
             /* index를 증가 시킵니다. */
-            aint[index]= result;
-            index++;
+            if(index==10){
+                for(int i=1; i<10;i++){
+                    aint[i-1]=aint[i];
+                }
+                aint[9]=result;
+            }else{
+                aint[index]= result;
+                index++;
+            }
+//            for (int i=0; i<10; i++){
+//                System.out.print(aint[i]+" ");
+//            }
+//            for문은 테스트 코드
             System.out.println("더 계산하시겠습니까? (아무것이나 입력,exit 입력 시 종료)");
             String end = sc.next();
 
