@@ -6,7 +6,10 @@ public class App {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+        /* 연산의 결과를 저장할 수 있도록 적합한 타입의 배열을 생성합니다. */
+        /* 연산의 결과가 저장된 배열의 마지막 index를 저장하는 변수를 선언 */
+        int[] aint = new int[10];
+        int index=0;
         boolean istrue= true;
 
         while(istrue){
@@ -41,6 +44,10 @@ public class App {
                     break;
             }
             System.out.println("결과: " + result);
+            /* 연산의 결과를 배열에 저장합니다. */
+            /* index를 증가 시킵니다. */
+            aint[index]= result;
+            index++;
             System.out.println("더 계산하시겠습니까? (아무것이나 입력,exit 입력 시 종료)");
             String end = sc.next();
 
