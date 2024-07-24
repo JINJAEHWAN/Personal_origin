@@ -1,5 +1,8 @@
 package calculator;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class App {
@@ -44,6 +47,9 @@ public class App {
                     break;
             }
             System.out.println("결과: " + result);
+
+
+
             /* 연산의 결과를 배열에 저장합니다. */
             /* index를 증가 시킵니다. */
             if(index==10){
@@ -59,6 +65,19 @@ public class App {
 //                System.out.print(aint[i]+" ");
 //            }
 //            for문은 테스트 코드
+            List<Integer> list = new ArrayList<Integer>();
+            for(int element: aint){
+                list.add(element);
+            }
+            /* 배열에서 컬렉션으로 변경됨으로써 변경해야하는 부분 구현 */
+
+            System.out.println("가장 먼저 저장된 연산 결과를 삭제하시겠습니까? (remove 입력 시 삭제)");
+            /* 위 요구사항에 맞게 구현 */
+            String remove = sc.next();
+            if (remove.equals("remove")) {
+                list.remove(0);
+            }
+
             System.out.println("더 계산하시겠습니까? (아무것이나 입력,exit 입력 시 종료)");
             String end = sc.next();
 
