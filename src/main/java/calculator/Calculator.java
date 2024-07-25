@@ -15,7 +15,7 @@ public class Calculator  {
                 break;
             case '/':
                 try{
-                    divide(num1, num2);
+                    result = divide(num1, num2);
                 }catch (DivideException e){
                     System.out.println(e.getMessage());
                 }
@@ -23,9 +23,10 @@ public class Calculator  {
         }
         return result;
     }
-    public void divide(int num1, int num2) throws DivideException {
+    public int divide(int num1, int num2) throws DivideException {
         if(num2 == 0){
             throw new DivideException();
         }
+        return num1/num2;
     }
 }
