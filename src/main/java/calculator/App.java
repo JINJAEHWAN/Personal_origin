@@ -14,7 +14,6 @@ public class App {
         int[] aint = new int[10];
         int index=0;
         boolean istrue= true;
-        Calculator calculator = new Calculator();
 
         while(istrue){
             System.out.print("첫 번째 숫자를 입력하세요: ");
@@ -28,8 +27,6 @@ public class App {
             char c = sc.next().charAt(0);
             int result = 0;
             /* 제어문을 활용하여 위 요구사항을 만족할 수 있게 구현합니다.*/
-
-
             switch (c) {
                 case '+':
                     result = a + b;
@@ -44,7 +41,6 @@ public class App {
                     if(b ==0){
                         result = 0;
                         break;
-
                     }else{
                         result = a / b;
                     }

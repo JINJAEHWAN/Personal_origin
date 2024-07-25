@@ -1,8 +1,13 @@
 package calculator;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Calculator  {
-    double result;
-    public double calculate(int num1, int num2, char operator){
+
+    List<Integer> list = new ArrayList<Integer>(10);
+    int result;
+    public void calculate(int num1, int num2, char operator){
         switch (operator) {
             case '+':
                 result = num1 + num2;
@@ -21,7 +26,7 @@ public class Calculator  {
                 }
                 break;
         }
-        return result;
+        list.add(result);
     }
     public int divide(int num1, int num2) throws DivideException {
         if(num2 == 0){
