@@ -26,6 +26,7 @@ public class Calculator  {
                 }
                 break;
         }
+        System.out.println("결과: " + result);
         list.add(result);
     }
     public int divide(int num1, int num2) throws DivideException {
