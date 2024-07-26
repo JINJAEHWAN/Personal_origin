@@ -42,7 +42,7 @@ public class App {
                 for (int element: calculator.getList()){
                     System.out.println(element);
                 }
-            }
+            }//2-5
             System.out.println("더 계산하시겠습니까? (아무것이나 입력,exit 입력 시 종료)");
             String end = sc.next();
 
