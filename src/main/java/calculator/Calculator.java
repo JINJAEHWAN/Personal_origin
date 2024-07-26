@@ -21,14 +21,11 @@ public class Calculator  {
     public void setListCircle(List<Integer> list){
         this.listCircle = list;
     }
-
+    AddOperator addOperator = new AddOperator();
+    SubtractOperator subtractOperator = new SubtractOperator();
+    MultiplyOperator multiplyOperator = new MultiplyOperator();
+    DivideOperator divideOperator = new DivideOperator();
     /* 원의 넓이 저장 필드 Getter, Setter, 조회 메서드 구현 */
 
-    public static int divide(int num1, int num2) throws DivideException {
-        if(num2 == 0){
-            throw new DivideException();
-        }
-        return num1/num2;
-        //언제나 호출할 수 있게 하기.
-    }
+
 }

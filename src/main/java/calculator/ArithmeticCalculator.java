@@ -10,24 +10,18 @@ public class ArithmeticCalculator extends Calculator{
         //오버라이딩 금지를 위해 final
         switch (operator) {
             case '+':
-                result = num1 + num2;
+                listCal2.add(addOperator.operate(num1, num2));
                 break;
             case '-':
-                result = num1 - num2;
+                listCal2.add(subtractOperator.operate(num1, num2));
                 break;
             case '*':
-                result = num1 * num2;
+                listCal2.add(multiplyOperator.operate(num1, num2));
                 break;
             case '/':
-                try{
-                    result = divide(num1, num2);
-                }catch (DivideException e){
-                    System.out.println(e.getMessage());
-                }
+                listCal2.add(divideOperator.operate(num1, num2));
                 break;
         }
-        System.out.println("결과: " + result);
-        listCal2.add(result);
         setList(listCal2);
     }
 
