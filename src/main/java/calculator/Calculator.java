@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Calculator  {
 
-    private List<Integer> list = new ArrayList<Integer>(10);
+    private List<Integer> list = new ArrayList<Integer>(10);//동적 초기화
     int result;
     public List<Integer> getList(){
         return list;
