@@ -5,8 +5,14 @@ import java.util.List;
 
 public class Calculator  {
 
-    List<Integer> list = new ArrayList<Integer>(10);
+    private List<Integer> list = new ArrayList<Integer>(10);
     int result;
+    public List<Integer> getList(){
+        return list;
+    }
+    public void setList(List<Integer> list){
+        this.list = list;
+    }
     public void calculate(int num1, int num2, char operator){
         switch (operator) {
             case '+':

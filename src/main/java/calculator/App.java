@@ -31,15 +31,15 @@ public class App {
 
             System.out.println("가장 먼저 저장된 연산 결과를 삭제하시겠습니까? (remove 입력 시 삭제)");
             /* 위 요구사항에 맞게 구현 */
-            String remove = sc.next();
-            if (remove.equals("remove")) {
-                calculator.list.remove(0);
+            String rm = sc.next();
+            if (rm.equals("remove")) {
+                calculator.getList().remove(0);
             }
             System.out.println("저장된 연산결과를 조회하시겠습니까? (inquiry 입력 시 조회)");
             /* 위 요구사항에 맞게 구현 */
             String inquiry = sc.next();
             if(inquiry.equals("inquiry")){
-                for (int element: calculator.list){
+                for (int element: calculator.getList()){
                     System.out.println(element);
                 }
             }
