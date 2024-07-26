@@ -22,38 +22,6 @@ public class Calculator  {
         this.listCircle = list;
     }
 
-    public final void calculate(int num1, int num2, char operator){
-    //오버라이딩 금지를 위해 final
-        switch (operator) {
-            case '+':
-                result = num1 + num2;
-                break;
-            case '-':
-                result = num1 - num2;
-                break;
-            case '*':
-                result = num1 * num2;
-                break;
-            case '/':
-                try{
-                    result = divide(num1, num2);
-                }catch (DivideException e){
-                    System.out.println(e.getMessage());
-                }
-                break;
-        }
-        System.out.println("결과: " + result);
-        listCal.add(result);
-    }
-
-    /* 원의 넓이를 구하는 메서드 선언*/
-    public final void calculateCircleArea(int raduis) {
-        //오버라이딩 금지를 위해 final
-        /* 원의 넓이 계산 구현 */
-        result=raduis*raduis;
-        //System.out.println("결과: " + result);
-        listCircle.add(result);
-    }
     /* 원의 넓이 저장 필드 Getter, Setter, 조회 메서드 구현 */
 
     public static int divide(int num1, int num2) throws DivideException {
