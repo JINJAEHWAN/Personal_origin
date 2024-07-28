@@ -21,6 +21,9 @@ public class ArithmeticCalculator extends Calculator{
             case '/':
                 listCal2.add(divideOperator.operate(num1, num2));
                 break;
+            case '%':
+                listCal2.add(modOperator.operate(num1, num2));
+                break;
         }
         setList(listCal2);
     }

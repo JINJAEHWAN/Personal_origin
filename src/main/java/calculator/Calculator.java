@@ -25,6 +25,7 @@ public class Calculator  {
     SubtractOperator subtractOperator = new SubtractOperator();
     MultiplyOperator multiplyOperator = new MultiplyOperator();
     DivideOperator divideOperator = new DivideOperator();
+    ModOperator modOperator = new ModOperator();
     /* 원의 넓이 저장 필드 Getter, Setter, 조회 메서드 구현 */
 
 
